@@ -13,8 +13,8 @@ require 'yaml'
 CONFIG = YAML.load(File.read('_config.yml'))
 USERNAME = CONFIG["username"]
 REPO = CONFIG["repo"]
-SOURCE_BRANCH = CONFIG["branch"]
-DESTINATION_BRANCH = "master" #"gh-pages"
+SOURCE_BRANCH = CONFIG["source_branch"]
+DESTINATION_BRANCH = CONFIG["destination_branch"]
 
 def check_destination
   unless Dir.exist? CONFIG["destination"]
