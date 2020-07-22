@@ -204,3 +204,10 @@ protocols:
     os_repo: "https://github.com/devellog/devellog.github.io"
     os_rcs_type: "git"
     os_src: "git@github.com:devellog/devellog.github.git"
+
+# Rake property
+username: devellog
+repo: devellog.github.io # Repository
+source_branch: source # SOURCE_BRANCH
+destination_branch: master # DESTINATION_BRANCH
+
