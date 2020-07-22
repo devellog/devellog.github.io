@@ -207,7 +207,7 @@ protocols:
 destination: ./maker
 
 production_url: https://devellog.github.io/
-source_url: https://github.com/devellog/devllog.github.maker
+source_url: https://github.com/devellog/devellog.github.maker
 
 safe: False
 lsi: False
