@@ -202,3 +202,17 @@ protocols:
     os_repo: "https://github.com/bencentra/centrarium.com"
     os_rcs_type: "git"
     os_src: "git@github.com:bencentra/centrarium.com.git"
+
+# for Travis CI
+destination: ./maker
+
+production_url: https://devellog.github.io/
+source_url: https://github.com/devellog/devllog.github.maker
+
+safe: False
+lsi: False
+
+username: devellog
+repo: devellog.github.maker
+branch: master
+############################################################
