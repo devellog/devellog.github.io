@@ -1,6 +1,6 @@
 language: ruby # 루비언어 사용
 rvm:
-- 2.3.3 # RVM 버전 2.3.3 사용
+- 2.6.6 # RVM 버전 2.3.3 사용
 
 script: bundle install && bundle exec jekyll build # 빌드 스크립트
 
