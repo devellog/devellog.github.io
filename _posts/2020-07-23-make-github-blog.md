@@ -4,7 +4,7 @@ title:  "Github 블로그 만들기"
 date:   "2020-07-23 00:00:00"
 author: Sean
 categories: jekyll
-tags:	jekyll centrarium
+tags:	jekyll github-page centrarium
 ---
 
 ## 사전 지식
@@ -19,7 +19,7 @@ HTML 쪼금
 <br/>
 ## 테마
 
-Centrarium [[GitHub repository]](https://github.com/bencentra/centrarium)
+**_Centrarium_** [link to jekyllthemes.org](http://jekyllthemes.org/themes/centrarium)
 
 
 <br/>
@@ -61,7 +61,6 @@ DESTINATION_BRANCH = "master"
 
 cache: bundler
 {% endhighlight %}
-
 
 * 삽질기간  
 
