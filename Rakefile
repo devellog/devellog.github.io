@@ -11,10 +11,19 @@ require 'yaml'
 
 
 CONFIG = YAML.load(File.read('_config.yml'))
-USERNAME = CONFIG["username"]
-REPO = CONFIG["repo"]
-SOURCE_BRANCH = CONFIG["source_branch"]
-DESTINATION_BRANCH = CONFIG["destination_branch"]
+#USERNAME = CONFIG["username"]
+#REPO = CONFIG["repo"]
+#SOURCE_BRANCH = CONFIG["branch"]
+#DESTINATION_BRANCH = "gh-pages"
+
+#USERNAME = CONFIG["username"]
+#REPO = CONFIG["repo"]
+#SOURCE_BRANCH = CONFIG["source_branch"]
+#DESTINATION_BRANCH = CONFIG["destination_branch"]
+USERNAME = "devellog"
+REPO = "devellog.github.io"
+SOURCE_BRANCH = "source"
+DESTINATION_BRANCH = "master"
 
 def check_destination
   unless Dir.exist? CONFIG["destination"]

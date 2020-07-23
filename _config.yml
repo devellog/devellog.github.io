@@ -9,8 +9,8 @@ exclude:
   - "/vendor/"
 
 # Site settings
-title: How to program my life
-subtitle: "Java Web Development, Spring Boot, AWS, etc..."
+title: 내 인생을 프로그래밍하는 방법
+subtitle: "How to program my life"
 email: sungws.dev@gmail.com
 name: Sean
 description: #>
@@ -55,11 +55,11 @@ jekyll-archives:
 
 # Category descriptions (for archive pages)
 descriptions:
-  - cat: jekyll
-    desc: "Posts describing Jekyll setup techniques."
+#  - cat: jekyll
+#    desc: "Posts describing Jekyll setup techniques."
 
-  - cat: dummy
-    desc: "Just some placeholder posts, lorem ipsum and the rest."
+#  - cat: dummy
+#    desc: "Just some placeholder posts, lorem ipsum and the rest."
 
 # Social icons and sharing options
 #
@@ -206,8 +206,8 @@ protocols:
     os_src: "git@github.com:devellog/devellog.github.git"
 
 # Rake property
-username: devellog
-repo: devellog.github.io # Repository
-source_branch: source # SOURCE_BRANCH
-destination_branch: master # DESTINATION_BRANCH
+#username: devellog
+#repo: devellog.github.io # Repository
+#source_branch: source # SOURCE_BRANCH
+#destination_branch: master # DESTINATION_BRANCH
 
