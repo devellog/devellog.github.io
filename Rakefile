@@ -25,6 +25,8 @@ REPO = "devellog.github.io"
 SOURCE_BRANCH = "source"
 DESTINATION_BRANCH = "master"
 
+cache: bundler # caching bundler gem packages will speed up build
+
 def check_destination
   unless Dir.exist? CONFIG["destination"]
     sh "git clone https://$GIT_NAME:$GH_TOKEN@github.com/#{USERNAME}/#{REPO}.git #{CONFIG["destination"]}"
