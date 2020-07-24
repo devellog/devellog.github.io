@@ -50,7 +50,7 @@
 <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
 <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script> -->
 <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js"></script> -->
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 <script src="//unpkg.com/popper.js@1"></script>
 <script src="//unpkg.com/tippy.js@5"></script>
@@ -59,6 +59,10 @@
 $(document).ready(function() {
   // Default syntax highlighting
   hljs.initHighlightingOnLoad();
+  hljs.configure({
+    tabReplace: '    ', // 4 spaces
+  });
+  hljs.initHighlighting();
 
   // Header
   var menuToggle = $('#js-mobile-menu').unbind();
