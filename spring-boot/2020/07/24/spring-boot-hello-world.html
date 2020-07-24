@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Spring Boot Web 시작하기</title>
+  <meta name="description" content="참고">
+  
+  <meta name="author" content="Sean">
+  <meta name="copyright" content="&copy; Sean 2020">
+  
+
+  <!-- External libraries -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/monokai-sublime.min.css"> -->
+  <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css"> -->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/default.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/monokai-sublime.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+
+  <!-- Favicon and other icons (made with http://www.favicon-generator.org/) -->
+  <link rel="shortcut icon" href="/assets/icons/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/assets/icons/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="57x57" href="/assets/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/assets/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/assets/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+  <link rel="manifest" href="/assets/icons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/assets/icons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  
+  <!-- Facebook OGP cards -->
+  <meta property="og:description" content="참고" />
+  <meta property="og:url" content="/spring-boot/2020/07/24/spring-boot-hello-world.html">
+  <meta property="og:site_name" content="내 인생을 프로그래밍하는 방법" />
+  <meta property="og:title" content="Spring Boot Web 시작하기" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/assets/logo.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="612" />
+  <meta property="og:image:height" content="605" />
+  
+
+  
+  <!-- Twitter: card tags -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Spring Boot Web 시작하기">
+  <meta name="twitter:description" content="참고">
+  <meta name="twitter:image" content="/assets/logo.png">
+  <meta name="twitter:url" content="/spring-boot/2020/07/24/spring-boot-hello-world.html">
+  
+
+  
+
+  <!-- Site styles -->
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="/spring-boot/2020/07/24/spring-boot-hello-world.html">
+	<link rel="alternate" type="application/rss+xml" title="내 인생을 프로그래밍하는 방법" href="/feed.xml" />
+  
+	<!-- Tooltips -->
+	<script type="text/javascript">
+		window.tooltips = []
+	</script>
+</head>
+
+
+  <body>
+
+    <header class="navigation" role="banner">
+  <div class="navigation-wrapper">
+    <a href="/" class="logo">
+      
+      <img src="/assets/logo.png" alt="내 인생을 프로그래밍하는 방법">
+      
+    </a>
+    <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <nav role="navigation">
+      <ul id="js-navigation-menu" class="navigation-menu show">
+				
+	
+	<li class="nav-link"><a href="/about/">about</a>
+	
+
+	
+
+	
+
+	
+	<li class="nav-link"><a href="/posts/">Posts</a>
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+    <div class="page-content">
+        <div class="post">
+
+<div class="post-header-container " >
+  <div class="scrim ">
+    <header class="post-header">
+      <h1 class="title">Spring Boot Web 시작하기</h1>
+      <p class="info">by <strong>Sean</strong></p>
+    </header>
+  </div>
+</div>
+
+<div class="wrapper">
+
+ <span class="page-divider">
+  <span class="one"></span>
+  <span class="two"></span>
+</span>
+ 
+
+<section class="post-meta">
+  <div class="post-date">July 24, 2020</div>
+  <div class="post-categories">
+  in 
+    
+    <a href="/category/spring-boot">Spring-boot</a>
+    
+  
+  </div>
+</section>
+
+<article class="post-content">
+  <h3 id="참고">참고</h3>
+
+<ul>
+  <li><a href="https://spring.io/projects/spring-boot">Spring Boot</a></li>
+  <li><a href="https://spring.io/guides">Spring Guide</a></li>
+</ul>
+
+<p><br /></p>
+
+<h3 id="ide">IDE</h3>
+
+<ul>
+  <li><a href="https://www.eclipse.org/downloads/">Eclipse</a></li>
+</ul>
+
+<h4 id="plugin">Plugin</h4>
+
+<ul>
+  <li>Eclipse 메뉴 ‘Help &gt; Eclipse Marketplace’ 선택<br />
+– Find: ‘Spring’ 입력<br />
+– Spring Tools 4 (aka Spring Tool Suite 4) 4.7.0.RELEASE - ‘Install’ 클릭<br />
+– ‘Confirm’ 클릭<br />
+– ‘I accept the terms of the license agreements’ 체크, ‘Finish’ 클릭<br />
+– ‘Restart Now’ 클릭</li>
+</ul>
+
+<p><br /></p>
+
+<h3 id="demo-프로젝트">demo 프로젝트</h3>
+
+<ul>
+  <li>메뉴 ‘File &gt; New &gt; Project’ 선택<br />
+– Wizards: ‘spring’ 입력<br />
+– ‘Spring Starter Project’ 선택, ‘Next’ 클릭</li>
+  <li>프로젝트 구성<br />
+– Maven 확인, ‘Next’ 클릭<br />
+– Dependency 선택 : ‘Web &gt; Spring Web’ 체크, ‘Finish’ 클릭</li>
+  <li>프로젝트 생성 결과
+<img src="/assets/images/posts/2020/2020-07-24-spring-boot-hello-world-03.png" style="width:300px" /></li>
+  <li>프로젝트 실행<br />
+– ‘DemoApplication.java’ 마우스 우클릭, ‘Run As &gt; Spring Boot App’ 선택<br />
+– Console message<br />
+    &gt; Tomcat initialized with port(s): 8080 (http)<br />
+    &gt; Tomcat started on port(s): 8080 (http) with context path ‘’<br />
+<img src="/assets/images/posts/2020/2020-07-24-spring-boot-hello-world-05.png" /></li>
+</ul>
+
+<p><br /></p>
+
+<h3 id="hello-world">Hello World</h3>
+
+<ul>
+  <li>‘pom.xml’ dependency 추가</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml">		<span class="nt">&lt;dependency&gt;</span>
+			<span class="nt">&lt;groupId&gt;</span>javax.servlet<span class="nt">&lt;/groupId&gt;</span>
+			<span class="nt">&lt;artifactId&gt;</span>jstl<span class="nt">&lt;/artifactId&gt;</span>
+		<span class="nt">&lt;/dependency&gt;</span>
+		<span class="nt">&lt;dependency&gt;</span>
+			<span class="nt">&lt;groupId&gt;</span>org.apache.tomcat.embed<span class="nt">&lt;/groupId&gt;</span>
+			<span class="nt">&lt;artifactId&gt;</span>tomcat-embed-jasper<span class="nt">&lt;/artifactId&gt;</span>
+			<span class="nt">&lt;scope&gt;</span>provided<span class="nt">&lt;/scope&gt;</span>
+		<span class="nt">&lt;/dependency&gt;</span></code></pre></figure>
+
+<ul>
+  <li>‘application.yml’ 생성<br />
+– ‘application.properties’ 파일은 삭제</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-yml" data-lang="yml"><span class="na">server</span><span class="pi">:</span>
+  <span class="na">port</span><span class="pi">:</span> <span class="m">80</span>
+<span class="na">spring</span><span class="pi">:</span>
+  <span class="na">mvc</span><span class="pi">:</span>
+    <span class="na">view</span><span class="pi">:</span>
+      <span class="na">prefix</span><span class="pi">:</span> <span class="s">/WEB-INF/jsp/</span>
+      <span class="na">suffix</span><span class="pi">:</span> <span class="s">.jsp</span></code></pre></figure>
+
+<ul>
+  <li>‘HelloController.java’ 생성</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kn">package</span> <span class="n">com</span><span class="o">.</span><span class="na">example</span><span class="o">.</span><span class="na">demo</span><span class="o">;</span>
+
+<span class="kn">import</span> <span class="nn">org.springframework.http.HttpStatus</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">org.springframework.http.ResponseEntity</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">org.springframework.stereotype.Controller</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">org.springframework.web.bind.annotation.RequestMapping</span><span class="o">;</span>
+
+<span class="kn">import</span> <span class="nn">java.util.HashMap</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.util.Map</span><span class="o">;</span>
+
+<span class="nd">@Controller</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">HelloController</span> <span class="o">{</span>
+
+    <span class="nd">@RequestMapping</span><span class="o">(</span><span class="s">"/hello"</span><span class="o">)</span>
+    <span class="kd">public</span> <span class="nc">String</span> <span class="nf">helloJSP</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="s">"hello"</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="nd">@RequestMapping</span><span class="o">(</span><span class="s">"/api/hello"</span><span class="o">)</span>
+    <span class="kd">public</span> <span class="nc">ResponseEntity</span><span class="o">&lt;?&gt;</span> <span class="n">helloAPI</span><span class="o">()</span> <span class="o">{</span>
+        <span class="nc">Map</span> <span class="n">data</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">HashMap</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">,</span> <span class="nc">Object</span><span class="o">&gt;();</span>
+        <span class="n">data</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="s">"data"</span><span class="o">,</span> <span class="s">"hello World"</span><span class="o">);</span>
+        <span class="k">return</span> <span class="k">new</span> <span class="nc">ResponseEntity</span><span class="o">&lt;&gt;(</span><span class="n">data</span><span class="o">,</span> <span class="nc">HttpStatus</span><span class="o">.</span><span class="na">OK</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span></code></pre></figure>
+
+<ul>
+  <li>‘hell.jsp’ 생성<br />
+– 경로 : ‘demo/src/main/webapp/WEB-INF/jsp’</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-jsp" data-lang="jsp"><span class="nt">&lt;%@ page </span><span class="na">contentType=</span><span class="s">"text/html;charset=UTF-8"</span><span class="na"> language=</span><span class="s">"java"</span> <span class="nt">%&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;title&gt;</span>Hello<span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+Hello JSP
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span></code></pre></figure>
+
+<ul>
+  <li>브라우저 실행 결과<br />
+– by JSP<br />
+<img src="/assets/images/posts/2020/2020-07-24-spring-boot-hello-world-07.png" style="width:400px" />
+– by Rest API<br />
+<img src="/assets/images/posts/2020/2020-07-24-spring-boot-hello-world-06.png" style="width:400px" /></li>
+</ul>
+
+</article>
+
+
+
+<section class="tags">
+  <strong>Tags:</strong> <a href="/tag/spring-boot">spring-boot</a>
+</section>
+
+
+
+<!--
+<section class="rss">
+  <p class="rss-subscribe text"><strong>Subscribe <a href="/feed.xml">via RSS</a></strong></p>
+</section>
+-->
+
+<!--
+<section class="share">
+  <span>Share: </span>
+  
+</section>
+-->
+
+
+
+
+
+</div>
+</div>
+
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h3 class="footer-heading">내 인생을 프로그래밍하는 방법</h3>
+
+    <div class="site-navigation">
+
+      <p><strong>Site Map</strong></p>
+      <ul class="pages">
+				
+	
+	<li class="nav-link"><a href="/about/">about</a>
+	
+
+	
+
+	
+
+	
+	<li class="nav-link"><a href="/posts/">Posts</a>
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+      </ul>
+    </div>
+
+    <div class="site-contact">
+
+      <p><strong>Contact</strong></p>
+      <ul class="social-media-list">
+        <li>
+          <a href="mailto:sungws.dev@gmail.com">
+            <i class="fa fa-envelope-o"></i>
+            <span class="username">sungws.dev@gmail.com</span>
+          </a>
+        </li>
+
+        
+
+      </ul>
+    </div>
+
+    <div class="site-signature">
+      <p class="rss-subscribe text"><strong>Subscribe <a href="/feed.xml">via RSS</a></strong></p>
+      <p class="text"></p>
+    </div>
+
+  </div>
+
+</footer>
+
+<!-- Scripts -->
+<script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script> -->
+<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js"></script> -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+<script src="//unpkg.com/popper.js@1"></script>
+<script src="//unpkg.com/tippy.js@5"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+  // Default syntax highlighting
+  hljs.initHighlightingOnLoad();
+  hljs.configure({
+    tabReplace: '    ', // 4 spaces
+  });
+  hljs.initHighlighting();
+
+  // Header
+  var menuToggle = $('#js-mobile-menu').unbind();
+  $('#js-navigation-menu').removeClass("show");
+  menuToggle.on('click', function(e) {
+    e.preventDefault();
+    $('#js-navigation-menu').slideToggle(function(){
+      if($('#js-navigation-menu').is(':hidden')) {
+        $('#js-navigation-menu').removeAttr('style');
+      }
+    });
+  });
+
+	// Enable tooltips via Tippy.js
+	if (Array.isArray(window.tooltips)) {
+		window.tooltips.forEach(function(tooltip) {
+			var selector = tooltip[0];
+			var config = tooltip[1];
+			tippy(selector, config);
+		})
+	}
+});
+
+</script>
+
+
+
+
+
+
+  </body>
+
+</html>

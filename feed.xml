@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>내 인생을 프로그래밍하는 방법</title>
+    <description></description>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 24 Jul 2020 09:14:15 +0000</pubDate>
+    <lastBuildDate>Fri, 24 Jul 2020 09:14:15 +0000</lastBuildDate>
+    <generator>Jekyll v3.8.6</generator>
+    
+      <item>
+        <title>Spring Boot Web 시작하기</title>
+        <description>&lt;h3 id=&quot;참고&quot;&gt;참고&lt;/h3&gt; &lt;ul&gt; &lt;li&gt;&lt;a href=&quot;https://spring.io/projects/spring-boot&quot;&gt;Spring Boot&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;https://spring.io/guides&quot;&gt;Spring Guide&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;br /&gt;&lt;/p&gt; &lt;h3 id=&quot;ide&quot;&gt;IDE&lt;/h3&gt; &lt;ul&gt; &lt;li&gt;&lt;a href=&quot;https://www.eclipse.org/downloads/&quot;&gt;Eclipse&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;h4 id=&quot;plugin&quot;&gt;Plugin&lt;/h4&gt; &lt;ul&gt; &lt;li&gt;Eclipse 메뉴 ‘Help &amp;gt; Eclipse Marketplace’ 선택&lt;br /&gt; –...</description>
+        <pubDate>Fri, 24 Jul 2020 00:00:00 +0000</pubDate>
+        <link>/spring-boot/2020/07/24/spring-boot-hello-world.html</link>
+        <guid isPermaLink="true">/spring-boot/2020/07/24/spring-boot-hello-world.html</guid>
+        
+        <category>spring-boot</category>
+        
+        
+        <category>spring-boot</category>
+        
+      </item>
+    
+      <item>
+        <title>Github 블로그 만들기</title>
+        <description>&lt;h2 id=&quot;사전-지식&quot;&gt;사전 지식&lt;/h2&gt; &lt;p&gt;Git + VSCode 쪼금&lt;/p&gt; &lt;p&gt;Markdown + VSCode 쪼금&lt;/p&gt; &lt;p&gt;HTML 쪼금&lt;/p&gt; &lt;p&gt;&lt;br /&gt;&lt;/p&gt; &lt;h2 id=&quot;테마&quot;&gt;테마&lt;/h2&gt; &lt;p&gt;&lt;strong&gt;&lt;em&gt;Centrarium&lt;/em&gt;&lt;/strong&gt; &lt;a href=&quot;http://jekyllthemes.org/themes/centrarium&quot;&gt;link to jekyllthemes.org&lt;/a&gt;&lt;/p&gt; &lt;p&gt;&lt;br /&gt;&lt;/p&gt; &lt;h2 id=&quot;참고&quot;&gt;참고&lt;/h2&gt; &lt;p&gt;&lt;a href=&quot;https://luke7102.github.io/dev/2019/12/09/dev-create-blog-01.html&quot;&gt;[GitHub Pages] 01...</description>
+        <pubDate>Thu, 23 Jul 2020 00:00:00 +0000</pubDate>
+        <link>/jekyll/2020/07/23/make-github-blog.html</link>
+        <guid isPermaLink="true">/jekyll/2020/07/23/make-github-blog.html</guid>
+        
+        <category>jekyll</category>
+        
+        <category>github-page</category>
+        
+        <category>centrarium</category>
+        
+        
+        <category>jekyll</category>
+        
+      </item>
+    
+  </channel>
+</rss>
