@@ -2,7 +2,7 @@
 layout: post
 title:  "Spring Boot Web 시작하기"
 date:   "2020-07-24 00:00:00"
-author: sean
+author: Sean
 categories: spring-boot
 tags:	spring-boot
 #cover:  "/assets/instacode.png"
