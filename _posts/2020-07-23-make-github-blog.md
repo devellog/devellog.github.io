@@ -49,7 +49,7 @@ HTML 쪼금
   -- Rakefile 없음  
 &nbsp;&nbsp; 'Travis-ci를 이용해 배포 자동화 시키기' 에 '**_Rakefile 작성_**' 참고 (아래는 수정한 부분) 
 
-```ruby
+{% highlight ruby %}
 #USERNAME = CONFIG["username"]
 #REPO = CONFIG["repo"]
 #SOURCE_BRANCH = CONFIG["branch"]
@@ -60,7 +60,7 @@ SOURCE_BRANCH = "source"
 DESTINATION_BRANCH = "master"
 
 cache: bundler
-```
+{% endhighlight %}
 
 * 삽질기간  
 
