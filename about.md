@@ -1,20 +1,17 @@
 ---
 layout: page
-title: 소개
+title: about
 permalink: /about/
 main_nav: true
 ---
-<!--
-![alt text]({{ site.baseurl }}/assets/profile-placeholder.gif "Profile Picture"){:.profile}
--->
 
-### Post 주제
+![](/assets/man-sitting-on-chair-2102413.jpg)
 
-* Java Web 개발 기술
+#### Java Web Development
 
   -- Spring Boot, AWS, etc...
 
-* Life
+#### My Life
 
   -- 먹고 사는 얘기...
 

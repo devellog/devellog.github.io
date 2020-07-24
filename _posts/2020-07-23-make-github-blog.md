@@ -9,9 +9,9 @@ tags:	jekyll github-page centrarium
 
 ## 사전 지식
 
-Git + VSCode 쪼금 함
+Git + VSCode 쪼금
 
-Markdown + VSCode 쪼금 함
+Markdown + VSCode 쪼금
 
 HTML 쪼금
 
